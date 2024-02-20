@@ -1,47 +1,25 @@
--- phpMyAdmin SQL Dump
--- version 5.2.1
--- https://www.phpmyadmin.net/
---
--- Hôte : 127.0.0.1
--- Généré le : lun. 19 fév. 2024 à 13:41
--- Version du serveur : 10.4.32-MariaDB
--- Version de PHP : 8.0.30
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-START TRANSACTION;
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
---
--- Base de données : `voiture`
---
-
--- --------------------------------------------------------
 
 --
 -- Structure de la table `voiture`
 --
 
-CREATE TABLE `voiture` (
-  `image` varchar(64) NOT NULL,
-  `prix` int(64) NOT NULL,
-  `année de circulation` int(64) NOT NULL,
-  `kilométrage` int(64) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+CREATE TABLE `voitures` (
+  `id` int(11) NOT NULL,
+  `marque` varchar(100) DEFAULT NULL,
+  `modele` varchar(100) DEFAULT NULL,
+  `prix` decimal(10,2) DEFAULT NULL,
+  `annee` int(11) DEFAULT NULL,
+  `kilometrage` int(11) DEFAULT NULL,
+  `description` text DEFAULT NULL,
+  `image` varchar(255) DEFAULT NULL
+);
 
 --
--- Déchargement des données de la table `voiture`
+-- Déchargement des données de la table `voitures`
 --
 
-INSERT INTO `voiture` (`image`, `prix`, `année de circulation`, `kilométrage`) VALUES
-('Peugeot 2008.jpg', 20000, 2020, 71300);
-COMMIT;
-
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+INSERT INTO `voitures` (`id`, `marque`, `modele`, `prix`, `annee`, `kilometrage`, `description`, `image`) VALUES
+(2, 'Renault', 'Clio', 8000.00, 2018, 50000, 'Bonne état, essence, faible consommation', 'img/Clio 5.jpg'),
+(3, 'Peugeot', '2008', 9000.00, 2017, 60000, 'Bon état général, diesel, climatisation', 'img/Peugeot 2008.jpg'),
+(4, 'Volkswagen', 'Golf', 12000.00, 2016, 70000, 'Quelques rayures, diesel, régulateur de vitesse', 'img/Golf 7.jpg'),
+(5, 'Hyundai', 'Ioniq 6', 25000.00, 2023, 500, 'Nouveau modèle électrique', 'img/Ioniq 6.jpg');
