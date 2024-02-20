@@ -1,0 +1,572 @@
+html {
+    color: #AA00AA;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+
+
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+
+ textarea {
+    resize: vertical;
+}
+
+   .flex {
+    display: flex;
+}
+
+.mainColor {
+    background-color: #b3d4fc;
+}
+
+.secondColor {
+    color: #40c7c9;
+}
+
+.thirdColor {
+    background-color: #40c7c9;
+    border: none;
+    color: black; 
+}
+
+.thirdColor:hover {
+    background-color: white;
+    border: none;
+    color: #40c7c9;
+}
+
+.fourthColor {
+    background-color: white;
+    border: 1px solid #40c7c9;
+}
+
+.tCenter {
+    text-align: center;
+}
+
+.logoH3 {
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.car-border {
+    border: 1px solid #ccc; /* Choisissez la couleur et l'épaisseur de la bordure selon vos préférences */
+    padding: 10px; /* Ajoutez un peu de marge intérieure pour l'espace entre la bordure et le contenu */
+    margin-bottom: 20px; /* Ajoutez un peu de marge en bas pour l'espace entre chaque voiture */
+}
+
+.ligneSection {
+    border-bottom: 1px solid #40c7c9;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+.logo{
+    width: 10%;
+    margin: auto;
+}
+/*end global classes*/
+
+/*start common rules*/
+body {
+    background-color: white;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-bottom: 1px solid;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 25px;
+    color: black;
+    text-decoration: underline;
+    margin-right: 80px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 2em 0 .5em 0;
+}
+
+h3 {
+    font-size: 40px; 
+    color: #40c7c9;
+}
+
+h5 {
+    font-size: 20px;
+    color: #40c7c9;
+    padding: .5em 1em;
+}
+
+h6 {
+    font-size: 20px;
+    color: red;
+    padding: 1em 0 2em 0;
+    border-bottom: 1px solid #40c7c9;
+    margin: .8em auto;
+    width: 95%;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    padding: .5em;
+    margin: 0px;
+}
+
+section {
+    width: 95%;
+    margin: auto;
+    padding: 0;
+}
+
+form {
+    width: 95%;
+    margin: auto;
+    padding: 2em 0;
+}
+
+p, td {
+    color: #40c7c9;
+}
+
+td, th {
+    border-bottom: 1px solid #40c7c9;
+    border-top: 1px solid #40c7c9;
+    text-align: center;
+}
+
+th {
+    color: red;
+}
+
+/*end common rules*/
+
+/*start header styles*/
+
+.menu {
+    display: none;
+    flex-basis: 100%;
+}
+
+.menu li a {
+    display: inline-block;
+    padding: .5em;
+}
+
+.site-title {
+    margin: .5em;
+}
+
+.menu-checkbox:checked ~ .menu {
+    display: block;
+}
+
+.menu-toggle {
+    padding: .5em;
+}
+
+.menu-checkbox {
+    display: none;
+}
+
+.nav-wrapper {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.titre-accroche {
+    width: 95%;
+    margin: auto;
+    justify-content: center;
+    padding: 19vh 0;
+    background-image: url("../img/fond-voiture.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Courgette', cursive;
+}
+
+/*end of header*/
+
+/*start footer styles*/
+
+.lienFoot {
+    justify-content: space-around;
+    width: 95%;
+    margin-right:;
+}
+
+
+
+/*end footer styles*/
+
+
+/*start main styles*/
+
+
+
+
+
+.paragrapheEspace {
+    margin: 2em 0; 
+}
+
+.car img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/*end main styles*/
+
+/*start actualité style*/
+
+.flexCard {
+    flex-direction: column;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 2em 0;
+    width: 95%;
+    margin: auto;
+}
+
+.cardResize {
+    max-height: 450px;
+    max-width: 350px;
+    margin: 2em .5em;
+}
+
+.textBody {
+    max-height: 350px;
+    overflow: auto;
+}
+
+.video {
+    max-height: 250px;
+    margin-bottom: 2em;
+}
+
+/*end actualté style*/
+
+/*start catalogue styles*/
+
+.textMain {
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+    margin:auto;
+}
+
+/*end catalogue styles*/
+
+/*start contact styles*/
+
+.map-responsive {
+    overflow:hidden;
+    padding: 2em .5em;
+    position:relative;
+    height:auto;
+}
+
+.map-responsive iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+}
+
+/*end contact style*/
+
+/*start garantie style*/
+
+.theadColor {
+    border: 2px 0 solid #40c7c9;
+}
+
+.tableResize {
+    width: 95%;
+    margin: 2em auto;
+}
+
+/*end garantie style*/
+
+/*start of inscription style*/
+
+.formStyle {
+    flex-direction: column;
+    align-items: center;
+}
+
+.resizeForm {
+    width: 300px;
+}
+
+.btnResize {
+    width: 80px;
+    height: 40px;
+}
+
+/*end of inscription style*/
+
+@media screen and (min-width: 900px) {
+    .menu-toggle, menu-checkbox {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin: 0;
+        padding: 0;
+        flex-basis: auto;
+    }
+
+    .menu li  {
+        display: inline-block;
+    }
+
+    .container {
+        width: 50%;
+        margin: auto;
+    }
+
+    .flex900 {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .textContact {
+        margin: 6em 0;
+        padding: 0; 
+    }
+
+    .cadreSection {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+ .visuallyhidden.focusable:active,
+ .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+ .invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+ .clearfix:before,
+ .clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+     a[href^="#"]:after,
+     a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+     thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
